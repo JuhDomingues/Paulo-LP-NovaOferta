@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 export default function FinalCTA() {
     const handleClick = () => {
-        window.location.href = 'https://payfast.greenn.com.br/116629/offer/gJhwlg';
+        window.location.href = 'https://payfast.greenn.com.br/116629/offer/fgApD3';
     };
 
     return (

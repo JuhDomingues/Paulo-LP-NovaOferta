@@ -8,7 +8,7 @@ import PauloBlack from '@/images/bio.jpeg'
 
 export default function SellingInfo() {
     const handleClick = () => {
-        window.location.href = 'https://payfast.greenn.com.br/116629/offer/gJhwlg';
+        window.location.href = 'https://payfast.greenn.com.br/116629/offer/fgApD3';
     };
 
     return (
