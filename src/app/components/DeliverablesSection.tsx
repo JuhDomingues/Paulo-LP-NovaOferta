@@ -1,6 +1,5 @@
 'use client';
 
-import { motion } from 'framer-motion';
 import Image from 'next/image';
 import GreenCheck from '@/images/Symbol.svg';
 
@@ -38,34 +37,22 @@ export default function DeliverablesSection() {
 
     return (
         <div className="container mx-auto px-4 py-12 lg:py-16">
-            <motion.div
+            <div
                 className="max-w-6xl mx-auto"
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.8 }}
             >
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white text-center mb-12 lg:mb-16">
                     O que você recebe <span className="text-[#8EF27E]">ao entrar</span>
                 </h2>
 
                 {/* Entregáveis Principais */}
-                <motion.div
+                <div
                     className="mb-12 lg:mb-16"
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: 0.3, duration: 0.8 }}
                 >
                     <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
                         {mainDeliverables.map((item, index) => (
-                            <motion.div
+                            <div
                                 key={index}
                                 className="bg-[rgba(226,246,227,0.06)] p-6 lg:p-8 rounded-2xl border border-[#8EF27E]"
-                                initial={{ opacity: 0, y: 30 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true }}
-                                transition={{ delay: 0.4 + index * 0.2, duration: 0.8 }}
                             >
                                 <div className="flex items-start mb-4">
                                     <Image className="w-6 h-6 mt-1 mr-3 animate-pulse flex-shrink-0" src={GreenCheck} alt="" />
@@ -79,31 +66,22 @@ export default function DeliverablesSection() {
                                 <p className="text-[#8EF27E] font-bold text-lg md:text-xl">
                                     (Valor: {item.value})
                                 </p>
-                            </motion.div>
+                            </div>
                         ))}
                     </div>
-                </motion.div>
+                </div>
 
                 {/* Bônus Exclusivos */}
-                <motion.div
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: 0.8, duration: 0.8 }}
-                >
+                <div>
                     <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#8EF27E] text-center mb-8 lg:mb-12">
                         Bônus Exclusivos:
                     </h3>
 
                     <div className="space-y-6 lg:space-y-8">
                         {bonuses.map((bonus, index) => (
-                            <motion.div
+                            <div
                                 key={index}
                                 className="bg-[rgba(226,246,227,0.06)] p-6 lg:p-8 rounded-2xl border border-[#8EF27E]"
-                                initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
-                                whileInView={{ opacity: 1, x: 0 }}
-                                viewport={{ once: true }}
-                                transition={{ delay: 1 + index * 0.2, duration: 0.8 }}
                             >
                                 <div className="flex flex-col md:flex-row md:items-start md:justify-between">
                                     <div className="flex-1">
@@ -123,11 +101,11 @@ export default function DeliverablesSection() {
                                         </p>
                                     </div>
                                 </div>
-                            </motion.div>
+                            </div>
                         ))}
                     </div>
-                </motion.div>
-            </motion.div>
+                </div>
+            </div>
         </div>
     );
 }

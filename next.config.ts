@@ -8,7 +8,7 @@ const nextConfig: NextConfig = {
     minimumCacheTTL: 31536000,
   },
   experimental: {
-    optimizePackageImports: ['framer-motion', 'swiper'],
+    optimizePackageImports: ['swiper'],
   },
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production',

@@ -1,6 +1,5 @@
 'use client'
 
-import { motion } from 'framer-motion';
 import Image from "next/image";
 import Number from './numbers';
 import Chair from '@/images/chair.png';
@@ -12,32 +11,19 @@ export default function ProblemNumbers() {
 
     return (
         <div className="px-4 md:px-8">
-            <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 1 }}
-            >
+            <div>
                 <h1 className="title font-bold leading-tight tracking-[-1.75px] text-center text-white">
                     Você não é o protagonista ainda...
                 </h1>
-                <motion.p
+                <p
                     className="text-white sm:text-xl md:text-2xl lg:text-[22px] xl:text-[1.750rem] mt-4 mb-12 lg:font-bold text-border lg:px-[12%] text-center mx-6"
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: 0.1, duration: 1 }}
                 >
                     Você quer crescer na internet ? Então o 1° passo é se posicionar como Autoridade    
-                </motion.p>
-            </motion.div>
+                </p>
+            </div>
 
-            <motion.div
+            <div
                 className="flex flex-col lg:flex-row items-center justify-center mb-6"
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 1 }}
             >
                 <div className="mb-6 lg:mr-[4%] lg:mt-12">
                     <Image src={Chair} alt="Cadeira" className="w-40 lg:w-[400px] drop-shadow-2xl" />
@@ -48,25 +34,17 @@ export default function ProblemNumbers() {
                         "Transforme sua audiência no Instagram em clientes fiéis e recorrentes, com um método claro e estratégico que realmente funciona.",
                         "Não importa o quanto você já tenha tentado crescer, este guia vai te dar a estrutura necessária para alcançar seus objetivos de uma vez por todas.",
                     ].map((text, index) => (
-                        <motion.div
+                        <div
                             key={index}
-                            initial={{ opacity: 0, x: -100 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: 0.2 * (index + 1), duration: 0.8 }}
                         >
                             <Number text={text} numbers={`0${index + 1}`} />
-                        </motion.div>
+                        </div>
                     ))}
                 </div>
-            </motion.div>
+            </div>
 
-            <motion.div
+            <div
                 className="flex flex-col items-center justify-center mb-[100px] md:mb-[130px] lg:mb-[160px]"
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.1, duration: 1 }}
             >
                 <button
                     onClick={() => handleClick()}
@@ -74,27 +52,19 @@ export default function ProblemNumbers() {
                 >
                     Quero ter os mesmos<br className="hidden md:block" /> resultados
                 </button>
-                <motion.p
+                <p
                     className="mt-4 text-white font-light text-base md:text-lg lg:text-[1.25rem]"
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: 0.2, duration: 1 }}
                 >
                     Toque no botão acima, comece hoje.
-                </motion.p>
+                </p>
                 <div className="flex items-center mt-2">
-                    <motion.p
+                    <p
                         className="mt-2 text-white ml-2 font-extralight text-sm md:text-base"
-                        initial={{ opacity: 0 }}
-                        whileInView={{ opacity: 1 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: 0.4, duration: 1 }}
                     >
                         compra segura
-                    </motion.p>
+                    </p>
                 </div>
-            </motion.div>
+            </div>
         </div>
     );
 }
