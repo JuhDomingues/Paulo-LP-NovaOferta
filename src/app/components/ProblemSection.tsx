@@ -56,7 +56,9 @@ export default function ProblemSection() {
                         viewport={{ once: true }}
                         transition={{ delay: 0.9, duration: 0.8 }}
                     >
-                        <span className="text-[#8EF27E] font-bold">Não é falta de capacidade.</span> É falta de posicionamento digital estratégico para atrair clientes de alto valor que reconheçam o seu preço e aumentem sua lucratividade.
+                        <span className="text-[#8EF27E] font-bold">Não é falta de capacidade.</span>
+                        <br /><br />
+                        É falta de posicionamento digital estratégico para atrair clientes de alto valor que reconheçam o seu preço e aumentem sua lucratividade.
                     </motion.p>
                 </motion.div>
             </motion.div>

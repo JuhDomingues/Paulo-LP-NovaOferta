@@ -22,24 +22,20 @@
 
 
 body {
-  font-family: "Manrope", serif;
+  font-family: var(--font-manrope), sans-serif;
   background-color: #031A09;
 }
 
 .sans {
-  font-family: "DM Sans", serif;
+  font-family: var(--font-dm-sans), sans-serif;
 }
 
 .sora {
-  font-family: "Sora", serif;
-}
-
-.poppins {
-  font-family: "Poppins", serif;
+  font-family: var(--font-sora), sans-serif;
 }
 
 .manrope {
-  font-family: "Manrope", serif;
+  font-family: var(--font-manrope), sans-serif;
 }
 
 .button {

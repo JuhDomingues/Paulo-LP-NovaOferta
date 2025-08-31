@@ -1,39 +1,36 @@
 import type { Metadata } from "next";
-import { DM_Sans, Manrope, Poppins, Sora } from "next/font/google";
+import { DM_Sans, Manrope, Sora } from "next/font/google";
 import "./globals.css";
 
 // Configuração de todas as fontes
-const dmSans = DM_Sans({
-  subsets: ["latin"],
-  display: "swap",
-  weight: ["400", "500", "700"],
-  variable: "--font-dm-sans",
-});
-
 const manrope = Manrope({
   subsets: ["latin"],
   display: "swap",
-  weight: ["300", "500", "700"],
+  weight: ["400", "500", "700"],
   variable: "--font-manrope",
 });
 
-const poppins = Poppins({
+const dmSans = DM_Sans({
   subsets: ["latin"],
-  display: "swap",
-  weight: ["300", "400", "600"],
-  variable: "--font-poppins",
+  display: "swap", 
+  weight: ["400", "700"],
+  variable: "--font-dm-sans",
+  preload: false,
 });
 
 const sora = Sora({
   subsets: ["latin"],
   display: "swap",
-  weight: ["400", "600", "700"],
+  weight: ["600", "700"],
   variable: "--font-sora",
+  preload: false,
 });
 
 export const metadata: Metadata = {
   title: "Paulo André Collet - Implementação na prática",
   description: "Autoridade no Instagram",
+  viewport: "width=device-width, initial-scale=1",
+  robots: "index, follow",
 };
 
 export default function RootLayout({
@@ -43,7 +40,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className={`${dmSans.variable} ${manrope.variable} ${poppins.variable} ${sora.variable} antialiased`}>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://www.youtube.com" />
+        <link rel="preconnect" href="https://connect.facebook.net" />
+        <link rel="dns-prefetch" href="https://cdn.utmify.com.br" />
+        <link rel="dns-prefetch" href="https://www.clarity.ms" />
+      </head>
+      <body className={`${manrope.variable} ${dmSans.variable} ${sora.variable} antialiased`}>
         {children}
       </body>
     </html>

@@ -98,7 +98,11 @@ export default function ImageCarousel() {
                   alt={image.alt}
                   className="object-contain bg-gray-900"
                   style={{width: '269px', height: '786px'}}
-                  priority={index < 3}
+                  priority={index < 2}
+                  loading={index >= 2 ? 'lazy' : undefined}
+                  quality={85}
+                  sizes="(max-width: 768px) 269px, 269px"
+                  placeholder="blur"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300" />
               </div>

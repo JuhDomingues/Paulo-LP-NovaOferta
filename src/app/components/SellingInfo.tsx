@@ -8,7 +8,7 @@ import PauloBlack from '@/images/bio.jpeg'
 
 export default function SellingInfo() {
     const handleClick = () => {
-        window.location.href = 'https://payfast.greenn.com.br/116629/offer/gJhwlg';
+        window.location.href = 'https://payfast.greenn.com.br/116629/offer/fgApD3';
     };
 
     return (
@@ -164,7 +164,11 @@ export default function SellingInfo() {
                             src={PauloBlack}
                             alt="Paulo André Collet"
                             className="w-full h-auto rounded-lg"
-                            layout="responsive"
+                            width={500}
+                            height={600}
+                            priority={false}
+                            loading="lazy"
+                            quality={90}
                         />
                     </motion.div>
                     <div className="lg:w-1/2 space-y-4 md:space-y-6">
