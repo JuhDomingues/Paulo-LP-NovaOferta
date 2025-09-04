@@ -3,7 +3,7 @@
 
 export default function FinalCTA() {
     const handleClick = () => {
-        window.location.href = 'https://payfast.greenn.com.br/116629/offer/fgApD3';
+        window.location.href = 'https://payfast.greenn.com.br/116629/offer/cy6G22';
     };
 
     return (
@@ -39,7 +39,7 @@ export default function FinalCTA() {
                     onClick={handleClick}
                     className="bg-[#8EF27E] text-black font-bold text-lg md:text-xl lg:text-2xl py-4 px-8 lg:py-6 lg:px-12 rounded-2xl hover:scale-105 transition-transform duration-300 shadow-2xl"
                 >
-                    GARANTIR MEU PLANO DE AUTORIDADE DIGITAL POR R$97
+                    GARANTIR MEU PLANO DE AUTORIDADE DIGITAL POR R$67
                 </button>
 
                 <p

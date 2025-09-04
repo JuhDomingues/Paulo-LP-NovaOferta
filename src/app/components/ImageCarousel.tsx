@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import Image from 'next/image';
 import Image1 from '@/images/1.jpg';
 import Image2 from '@/images/2.jpg';
@@ -23,7 +23,8 @@ const images = [
 export default function ImageCarousel() {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const [showLeftArrow, setShowLeftArrow] = useState(false);
-  const [showRightArrow, setShowRightArrow] = useState(true);
+  const [showRightArrow, setShowRightArrow] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
 
   const scroll = (direction: 'left' | 'right') => {
     if (!scrollContainerRef.current) return;
@@ -39,7 +40,7 @@ export default function ImageCarousel() {
   };
 
   const handleScroll = () => {
-    if (!scrollContainerRef.current) return;
+    if (!scrollContainerRef.current || !isMounted) return;
     
     const container = scrollContainerRef.current;
     const scrollLeft = container.scrollLeft;
@@ -50,6 +51,17 @@ export default function ImageCarousel() {
     setShowRightArrow(scrollLeft < scrollWidth - clientWidth - 10);
   };
 
+  useEffect(() => {
+    setIsMounted(true);
+    // Initialize arrow visibility after mount
+    if (scrollContainerRef.current) {
+      const container = scrollContainerRef.current;
+      const scrollWidth = container.scrollWidth;
+      const clientWidth = container.clientWidth;
+      setShowRightArrow(scrollWidth > clientWidth);
+    }
+  }, []);
+
   return (
     <div className="w-full max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 py-12 lg:py-16">
       <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white text-center mb-8 lg:mb-12">
@@ -58,7 +70,7 @@ export default function ImageCarousel() {
       
       <div className="relative group">
         {/* Left Arrow */}
-        {showLeftArrow && (
+        {isMounted && showLeftArrow && (
           <button
             onClick={() => scroll('left')}
             className="absolute left-2 top-1/2 -translate-y-1/2 z-10 bg-black bg-opacity-70 text-white p-3 rounded-full hover:bg-opacity-90 transition-all duration-200 opacity-0 group-hover:opacity-100"
@@ -71,7 +83,7 @@ export default function ImageCarousel() {
         )}
 
         {/* Right Arrow */}
-        {showRightArrow && (
+        {isMounted && showRightArrow && (
           <button
             onClick={() => scroll('right')}
             className="absolute right-2 top-1/2 -translate-y-1/2 z-10 bg-black bg-opacity-70 text-white p-3 rounded-full hover:bg-opacity-90 transition-all duration-200 opacity-0 group-hover:opacity-100"

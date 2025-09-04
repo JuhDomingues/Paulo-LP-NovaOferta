@@ -7,7 +7,7 @@ import PauloBlack from '@/images/bio.jpeg'
 
 export default function SellingInfo() {
     const handleClick = () => {
-        window.location.href = 'https://payfast.greenn.com.br/116629/offer/fgApD3';
+        window.location.href = 'https://payfast.greenn.com.br/116629/offer/cy6G22';
     };
 
     return (
@@ -15,7 +15,7 @@ export default function SellingInfo() {
             {/* Seção Título Principal */}
             <div className="mb-8 md:mb-12 lg:mb-16">
                 <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight text-center text-white mb-6 mx-2">
-                    Qual é o valor real do plano?
+                    Transforme seu instagram em uma máquina de <span className="text-[#8EF27E] animate-pulse">atrair clientes</span> em 12 passos simples
                 </h1>
             </div>
 
@@ -36,7 +36,7 @@ export default function SellingInfo() {
                                 "Guia de 12 Passos para Autoridade no Instagram (Valor: R$497)",
                                 "Curso de Implementação Prática (Valor: R$497)",
                                 "Curso de Fotos Profissionais que Geram Autoridade (Valor: R$197)",
-                                "Aula Empower Life: \"Reconhecendo o Medo\" (Valor: R$97)",
+                                "Aula Empower Life: \"Reconhecendo o Medo\" (Valor: R$67)",
                                 "Sessão em Grupo de Autoridade (ao vivo) (Valor: R$497)"
                             ].map((text, index) => (
                                 <div key={index} className="flex items-start space-x-2">
@@ -57,7 +57,7 @@ export default function SellingInfo() {
                             </p>
                             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white">
                                 HOJE POR APENAS<br />
-                                <strong className="text-[#8EF27E] animate-pulse">R$97,00</strong>
+                                <strong className="text-[#8EF27E] animate-pulse">R$67,00</strong>
                             </h1>
                             <p className="text-base md:text-lg text-white mt-4">
                                 Isso é menos do que um jantar fora — para ter em mãos o plano que pode colocar clientes de alto valor batendo à sua porta.

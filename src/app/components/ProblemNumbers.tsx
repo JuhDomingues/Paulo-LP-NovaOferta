@@ -6,7 +6,7 @@ import Chair from '@/images/chair.png';
 
 export default function ProblemNumbers() {
     const handleClick = () => {
-            window.location.href = 'https://payfast.greenn.com.br/116629/offer/fgApD3';
+            window.location.href = 'https://payfast.greenn.com.br/116629/offer/cy6G22';
           };
 
     return (

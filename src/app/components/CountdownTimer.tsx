@@ -30,9 +30,17 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({ targetDate }) => {
     return timeLeft;
   };
 
-  const [timeLeft, setTimeLeft] = useState<TimeLeft>(calculateTimeLeft());
+  const [timeLeft, setTimeLeft] = useState<TimeLeft>({});
+  const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
+    setIsMounted(true);
+    setTimeLeft(calculateTimeLeft());
+  }, []);
+
+  useEffect(() => {
+    if (!isMounted) return;
+    
     const timer = setTimeout(() => {
       setTimeLeft(calculateTimeLeft());
     }, 1000);
@@ -53,6 +61,14 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({ targetDate }) => {
       </span>
     );
   });
+
+  if (!isMounted) {
+    return (
+      <div className="text-white text-center text-lg font-bold mt-2">
+        <span>Carregando...</span>
+      </div>
+    );
+  }
 
   return (
     <div className="text-white text-center text-lg font-bold mt-2">

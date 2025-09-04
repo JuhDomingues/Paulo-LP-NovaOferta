@@ -26,7 +26,7 @@ export default function DeliverablesSection() {
         {
             title: "Aula Empower Life: \"Reconhecendo o Medo\"",
             description: "Estratégia prática para vencer o medo da exposição e se posicionar com segurança, sem parecer amador.",
-            value: "R$97"
+            value: "R$67"
         },
         {
             title: "Sessão em Grupo de Autoridade (ao vivo)",

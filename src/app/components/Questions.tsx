@@ -3,7 +3,7 @@ import FAQItem from "./FAQ"
 
 export default function Questions() {
   const handleClick = () => {
-          window.location.href = 'https://payfast.greenn.com.br/116629/offer/fgApD3';
+          window.location.href = 'https://payfast.greenn.com.br/116629/offer/cy6G22';
         };
     return (
     <div className="mt-[120px] flex flex-col items-center mb-[100px]">
