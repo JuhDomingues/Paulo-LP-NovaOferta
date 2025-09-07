@@ -16,7 +16,7 @@ export default function MainSection() {
         <div className="flex flex-col-reverse lg:flex-row justify-center items-center lg:mt-[8vh] mt-[5vh] px-4 sm:px-8 lg:px-12 max-w-6xl mx-auto gap-6 lg:gap-12">
             <div className="lg:mt-[8vh] w-full lg:max-w-[50%] text-center lg:text-left">
                 <h1 className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight tracking-[-0.05vw]" suppressHydrationWarning>
-                    Transforme seu instagram em uma máquina de <strong className="text-[#8EF27E]">atrair clientes</strong> em 12 passos simples
+                    Transforme seu instagram em uma máquina de atrair clientes através do seu <strong className="text-[#8EF27E]">Posicionamento no Instagram</strong>
                 </h1>
                 <p className="text-white text-base sm:text-lg md:text-xl font-light leading-7 mt-4 lg:w-[90%]">
                     Com um método já aplicado em médicos, advogados, arquitetos, consultores e empreendedores que precisavam parar de depender de indicação e começaram a ser reconhecidos como referência no digital.

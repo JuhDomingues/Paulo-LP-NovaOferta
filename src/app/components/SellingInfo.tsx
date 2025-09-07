@@ -7,7 +7,7 @@ import PauloBlack from '@/images/bio.jpeg'
 
 export default function SellingInfo() {
     const handleClick = () => {
-        window.location.href = 'https://payfast.greenn.com.br/116629/offer/cy6G22';
+        window.location.href = 'https://payfast.greenn.com.br/116629/offer/Ak10v6';
     };
 
     return (
@@ -15,7 +15,7 @@ export default function SellingInfo() {
             {/* Seção Título Principal */}
             <div className="mb-8 md:mb-12 lg:mb-16">
                 <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight text-center text-white mb-6 mx-2">
-                    Transforme seu instagram em uma máquina de <span className="text-[#8EF27E] animate-pulse">atrair clientes</span> em 12 passos simples
+                    Transforme seu instagram em uma máquina de atrair clientes através do seu <span className="text-[#8EF27E] animate-pulse">posicionamento no instagram</span>
                 </h1>
             </div>
 
@@ -25,7 +25,7 @@ export default function SellingInfo() {
                     {/* Texto e Lista */}
                     <div className="lg:w-1/2 text-center lg:text-left">
                         <h1 className="text-xl md:text-2xl lg:text-3xl font-bold leading-normal text-white mb-4">
-                            Se eu entregasse só o Guia, <br className="hidden lg:block"/> 
+                            Se eu entregasse só o Plano de posicionamento, <br className="hidden lg:block"/> 
                             já valeria os <strong className="text-[#8EF27E] animate-pulse">R$497</strong>.
                         </h1>
                         <h2 className="text-base md:text-lg lg:text-xl text-white mb-6 md:mb-8">
@@ -33,7 +33,7 @@ export default function SellingInfo() {
                         </h2>
                         <div className="space-y-3 md:space-y-4">
                             {[
-                                "Guia de 12 Passos para Autoridade no Instagram (Valor: R$497)",
+                                "Plano de posicionamento no Instagram (Valor: R$497)",
                                 "Curso de Implementação Prática (Valor: R$497)",
                                 "Curso de Fotos Profissionais que Geram Autoridade (Valor: R$197)",
                                 "Aula Empower Life: \"Reconhecendo o Medo\" (Valor: R$67)",
@@ -57,7 +57,7 @@ export default function SellingInfo() {
                             </p>
                             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white">
                                 HOJE POR APENAS<br />
-                                <strong className="text-[#8EF27E] animate-pulse">R$67,00</strong>
+                                <strong className="text-[#8EF27E] animate-pulse">R$29,90</strong>
                             </h1>
                             <p className="text-base md:text-lg text-white mt-4">
                                 Isso é menos do que um jantar fora — para ter em mãos o plano que pode colocar clientes de alto valor batendo à sua porta.

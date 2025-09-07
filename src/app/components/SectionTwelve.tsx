@@ -6,7 +6,7 @@ import GreenCheck from '@/images/Symbol.svg';
 
 export default function SectionTwelve() {
     const handleClick = () => {
-        window.location.href = 'https://payfast.greenn.com.br/116629/offer/cy6G22';
+        window.location.href = 'https://payfast.greenn.com.br/116629/offer/Ak10v6';
     };
 
     return (
@@ -36,7 +36,7 @@ export default function SectionTwelve() {
                         className="space-y-4 mt-6"
                     >
                         {[
-                            "Guia de 12 Passos para Autoridade no Instagram",
+                            "Plano de posicionamento no Instagram",
                             "Mentoria em grupo",
                             "Mentoria individual",
                             "Curso de Implementação Prática",

@@ -3,7 +3,7 @@
 
 export default function FinalCTA() {
     const handleClick = () => {
-        window.location.href = 'https://payfast.greenn.com.br/116629/offer/cy6G22';
+        window.location.href = 'https://payfast.greenn.com.br/116629/offer/Ak10v6';
     };
 
     return (

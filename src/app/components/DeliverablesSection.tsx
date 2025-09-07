@@ -6,7 +6,7 @@ import GreenCheck from '@/images/Symbol.svg';
 export default function DeliverablesSection() {
     const mainDeliverables = [
         {
-            title: "Guia de 12 Passos para Autoridade no Instagram",
+            title: "Plano de posicionamento no Instagram",
             description: "O material organizado que mostra cada passo de forma simples. Serve como manual prático para você se posicionar no digital e começar a atrair clientes de alto valor.",
             value: "R$497"
         },
